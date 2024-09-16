@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    background-color: #000000;
+    font-size: 12px;
+    color: white;
+
+}
+
+h1 {
+    color: cornflowerblue;
+}
+
+
+
+.borda {
+    background: rgba(224, 224, 224, 0.471);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+    display: inline-block;
+    background: rgb(140, 241, 145);
+    color: #878484;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.cor {
+    background-color: rgba(216, 216, 216, 0.471);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.linha {
+    text-decoration: underline;
+}
+
+ul {
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(167, 167, 167);
+    padding: 0px;
+    margin: 0px;
+}
+
+.borda2 {
+    background: rgba(0, 0, 0, 0.471);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+ul .a {
+    text-decoration: none;
+    color: cornflowerblue;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.obrigado {
+    text-size-adjust: 1000px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo do contêiner do dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Estilo do conteúdo do dropdown */
+.dropdown-content {
+    display: block; /* Define display como block para aplicar a transição */
+    position: absolute;
+    background-color: #878484;
+    min-width: 190px;
+    box-shadow: 0px 8px 16px 0px rgba(138, 26, 26, 0.2);
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    transform: translateY(-10px);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.5s ease;
+}
+
+/* Estilo dos itens da lista no dropdown */
+.dropdown-content li {
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo dos links dentro do dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Estilo dos links no hover */
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+/* Mostrar o dropdown ao passar o mouse sobre o item */
+.dropdown:hover .dropdown-content {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0); /* Move o menu para a posição final */
+}
+
+.fonte {
+    font-size: 30px;
+    font-family: fantasy;
+}
+
+img {
+    width: 350px;
+    max-width: 100%;
+    height: 300px;
+}
+
+.flexbox {
+    display: flex;
+    margin: 10px;
+    display: inline;
+    align-items: center;
+}
+
+
+.font {
+    font-size: 100px;
+}
+
+/* Container da galeria usando Flexbox */
+.gallery-flexbox {
+    display: flex; /* Ativa o Flexbox */
+    justify-content: space-around; /* Distribui os itens com espaço ao redor */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha se não couberem */
+    padding: 20px;
+    width: 80%;
+    margin: auto; /*coloca o container para o meio automaticamente*/
+    display: inline ;
+}
+.gallery-flexbox:hover .gallery-item{
+    opacity: .5;
+}
+.gallery-flexbox .gallery-item:hover {
+    opacity: 1
+}
+/* Cada item da galeria */
+.gallery-item {
+    transition: all .3s;
+}
+.gallery-item:hover{
+    transform: translateY(-20px)
+}
+
+/* Estilos para as imagens */
+.gallery-item img {
+    width: 100%; /* Garante que a imagem preencha todo o espaço disponível */
+    height: auto; /* Mantém a proporção da imagem */
+}
